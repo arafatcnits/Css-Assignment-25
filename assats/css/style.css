@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #7f99fa;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination {
+    background-color: white;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+}
+.pagination a {
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    transition: .3s linear;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+.pagination a:hover {
+    color: white;
+    background-color: #5271e9;
+}
+.pagination i {
+    padding: 0px 10px 0px 0px;
+}
+.bottom_bar {
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: black;
+    bottom: 0;
+    left: -100px;
+    transition: .4s;
+}
+.pagination a:nth-child(1):hover ~ .bottom_bar{
+    left: 0px;
+}
+.pagination a:nth-child(2):hover ~ .bottom_bar{
+    left: 102px;
+}
+.pagination a:nth-child(3):hover ~ .bottom_bar{
+    left: 202px;
+}
+.pagination a:nth-child(4):hover ~ .bottom_bar{
+    left: 302px;
+}
+.pagination a:nth-child(5):hover ~ .bottom_bar{
+    left: 400px;
+}
+.pagination a:nth-child(6):hover ~ .bottom_bar{
+    left: 506px;
+}
+.pagination a:nth-child(7):hover ~ .bottom_bar{
+    left: 606px;
+}
+.pagination a:nth-child(8):hover ~ .bottom_bar{
+    left: 708px;
+}
